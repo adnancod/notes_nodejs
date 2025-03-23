@@ -8,7 +8,7 @@ const noteSchema= mongoose.Schema({
     },
     userid:{
         type: String,
-        unique: true,
+        // unique: true,
     },
     title:{
         type: String,
