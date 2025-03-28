@@ -44,7 +44,7 @@ app.get('/notes', async (req, res) => {
 app.delete('/notes/:id', async (req, res) => {
 
     try {
-        const notesId = req.params._id;
+        const notesId = req.params.id;
 
         const response = await Notes.findByIdAndDelete(notesId);
 
@@ -64,7 +64,7 @@ app.delete('/notes/:id', async (req, res) => {
 
 app.put('/notes/:id', async (req, res) => {
     try {
-        const notesId = req.params._id;
+        const notesId = req.params.id;
 
         const updatednotes = req.body;
 
