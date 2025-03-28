@@ -41,7 +41,7 @@ app.get('/notes', async (req, res) => {
 
 })
 
-app.delete('/notes/:_id', async (req, res) => {
+app.delete('/notes/:id', async (req, res) => {
 
     try {
         const notesId = req.params._id;
@@ -62,7 +62,7 @@ app.delete('/notes/:_id', async (req, res) => {
 
 })
 
-app.put('/notes/:_id', async (req, res) => {
+app.put('/notes/:id', async (req, res) => {
     try {
         const notesId = req.params._id;
 
