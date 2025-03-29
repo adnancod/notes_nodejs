@@ -1,11 +1,11 @@
 const mongoose= require('mongoose');
 
 const noteSchema= mongoose.Schema({
-    id:{
-        type: String,
-        unique: true,
-        required: true
-    },
+    // id:{
+    //     type: String,
+    //     unique: true,
+    //     required: true
+    // },
     userid:{
         type: String,
         // unique: true,
